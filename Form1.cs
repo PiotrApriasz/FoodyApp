@@ -24,6 +24,8 @@ namespace FoodAppWindow
             firstCustomControl1.BringToFront();
         }
 
+        //This is my one of firsts win forms programs so I choose wrong .NET version.
+        //In .NET Core there is a problem with openi
         private void OpenUrl(string url)
         {
             try
@@ -75,5 +77,11 @@ namespace FoodAppWindow
 
         private void button10_Click(object sender, EventArgs e) => OpenUrl("https://github.com/PiotrApriasz");
 
+        //Popup window with information about program. Cointains App's name, creator's informations and version
+        private void button14_Click(object sender, EventArgs e)
+        {
+            var popup = new infoPopup();
+            popup.ShowDialog();
+        }
     }
 }
