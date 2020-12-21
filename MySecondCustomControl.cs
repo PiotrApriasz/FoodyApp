@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace FoodAppWindow
 {
@@ -28,6 +29,12 @@ namespace FoodAppWindow
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Task.Delay(4000);
+            MessageBox.Show("Ale se poczekales", "FoodY");
         }
     }
 }

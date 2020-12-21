@@ -25,7 +25,8 @@ namespace FoodAppWindow
         }
 
         //This is my one of firsts win forms programs so I choose wrong .NET version.
-        //In .NET Core there is a problem with openi
+        //In .NET Core there is a problem with opening links in default browser 
+        //so below there is a fix to it. 
         private void OpenUrl(string url)
         {
             try
@@ -83,5 +84,13 @@ namespace FoodAppWindow
             var popup = new infoPopup();
             popup.ShowDialog();
         }
+
+        private void mySecondCustomControl1_Load(object sender, EventArgs e)
+        {
+            //Task.Delay(4000).Wait();
+            //MessageBox.Show("Ale se poczekales", "FoodY");
+        }
+
+
     }
 }

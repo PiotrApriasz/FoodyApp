@@ -364,6 +364,7 @@
             this.mySecondCustomControl1.Name = "mySecondCustomControl1";
             this.mySecondCustomControl1.Size = new System.Drawing.Size(1008, 615);
             this.mySecondCustomControl1.TabIndex = 5;
+            this.mySecondCustomControl1.Load += new System.EventHandler(this.mySecondCustomControl1_Load);
             // 
             // Form1
             // 
